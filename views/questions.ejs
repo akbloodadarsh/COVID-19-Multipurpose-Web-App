@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="/css/style.css">
+	 <link rel="stylesheet" href="/css/screening_index.css">
+	<link rel="stylesheet" type="text/css" href="/css/questions.css">
+	<script type="text/javascript" src="/screening_backend.js"></script>
+</head>
+	<body>
+    <div class="navbar">
+        <ul>
+          <li><a class="HOME" href="/">HOME</a></li>
+          <li><a class="NEWS" href="/news" >NEWS</a></li>
+          <li><a class="CHAT" href="/chat">CHAT</a></li>
+          <li><a class="MAP" href="/map">MAP</a></li>
+          <li><a class="SCREENING" href="/screening">SCREENING</a></li>
+        </ul>
+    </div>
+		<div class="everything-position">
+			<div>
+		  		<h1 id="question">Q-1 In the last 14 days, have you traveled internationally?</h1>
+		  	</div>
+	  	    <div class="answer-button">
+	  	  	  <label for="">Yes</label>
+			  <input type="radio" id="val1" name="answer" value="yes">
+		    </div>
+		    <div class="answer-button">
+		  	 <label for="">No</label>
+		  	 <input type="radio" id="val2" name="answer" value="no">
+		    </div>
+		    <div>
+		    	<button id="button1" onclick="update_value()">NEXT</button>
+		    	<button id="button2" onclick="check_result()"></button>
+			</div>
+		</div>
+		<script>
+			var result = 0;
+			var question_no = 0;
+			var arr = ["Q-2 Do you live in a long-term care facility?","Q-3 Do you work in a medical facility?","Q-4 Have you had close unprotected contact with a confirmed or probable case of COVID-19?","Q-5 Do you have any of the following: fever or chills, cough, shortness of breath or difficulty breathing, body aches, headache, new loss of taste or smell, sore throat?"];
+			function update_value(){
+				// document.write("bla");
+				if(document.getElementById('val1').checked == false)
+				{
+					result-=1;
+				}
+				else{
+					result+=1;
+				}
+				document.getElementById('question').innerHTML = "";
+				document.getElementById('question').innerHTML += arr[question_no];
+				question_no+=1;
+				if(question_no == 4)
+				{
+					document.getElementById('button1').innerHTML = "";
+					document.getElementById('button2').innerHTML += "SUBMIT";
+				}
+			}
+
+			function check_result()
+			{
+				if(document.getElementById('val1').checked)
+				{
+					result-=1;
+				}
+				else{
+					result+=1;
+				}
+				if(result>4)
+				{
+					alert("You will live to see another decade at lesat");
+				}
+				else if(result<=2){
+					alert("Get a doctor now!");
+				}
+				else {
+					alert("Have you ever met a doctor in person?I think probably its a good time to see one!")
+				}
+				location.reload();
+			}
+		</script>
+	</body>
+</html>
