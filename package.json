@@ -1,21 +1,21 @@
 {
-  "name": "coronawebapp",
-  "version": "1.0.0",
-  "description": "Web App for Covid-19",
+  "name": "covid19-multipurpose-webapp",
+  "version": "1.0.1",
+  "description": "COVID-19-Multipurpose-Web-App",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bhusalashish/coronaWebApp.git"
+    "url": "git+https://github.com/akbloodadarsh/COVID-19-Multipurpose-Web-App.git"
   },
-  "author": "Ashish Bhusal",
-  "license": "ISC",
+  "author": "Adarsh Kunwar",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/bhusalashish/coronaWebApp/issues"
+    "url": "git+https://github.com/akbloodadarsh/COVID-19-Multipurpose-Web-App/issues"
   },
-  "homepage": "https://github.com/bhusalashish/coronaWebApp#readme",
+  "homepage": "git+https://github.com/akbloodadarsh/COVID-19-Multipurpose-Web-App#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.3",
