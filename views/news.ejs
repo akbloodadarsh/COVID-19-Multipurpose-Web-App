@@ -18,9 +18,8 @@
           <li><a class="MAP" href="/map">MAP</a></li>
           <li><a class="SCREENING" href="/screening">SCREENING</a></li>
         </ul>
-    </div>
-    <div class="center">
-        <h1 class="NEWS_heading">Covid-19 Latest News</h1><br>  
+    </div>  
+    <div align = "center" style="padding-top: 100px;">
         <table>
         <div class="News_data">
         <% for(var i=0; i < datas.headlines.length; i++) { %>
@@ -33,7 +32,7 @@
                     </div>
                 </td>
                 <td>
-                    <img class="NEWS_img" src= <%= datas.image_link[i] %> alt="data.country">
+                    <img class="NEWS_img" src="<%= datas.image_link[i] %>" alt="data.country"/>
                 </td>
             <% } %>
             </tr>
