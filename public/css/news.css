@@ -1,0 +1,101 @@
+.navbar {
+	width: 100%;
+	position: fixed;
+	display: block;
+	padding: 0px;
+}
+
+.center{
+    text-align: center;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+.summary{
+	font-size: large;
+}
+
+.headlines{
+	font-size: xx-large;
+}
+
+
+.NEWS {
+	text-decoration: none;
+  background-color: black;
+}
+.NEWS:hover {
+	text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+.NEWS_heading {
+	font-size: 50px;
+	font-family: apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+
+.NEWS_img {
+	display: inline-block;
+	width: 500px;
+	height: 300px;
+	left: 80%;
+	margin-bottom: 80px;
+	margin-left: 50px;
+}
+
+.NEWS_headlines_summary {
+	display: inline-block;
+	width: 600px;
+	height: 400px;
+	padding: 5px;
+	margin-left: 50px;
+}
+
+.CHAT {
+	text-decoration: none;
+}
+
+.CHAT:hover {
+	text-decoration: none;
+}
+
+
+.HOME {
+	text-decoration: none;
+}
+
+.HOME:hover {
+	text-decoration: none;
+}
+
+.SCREENING {
+	text-decoration: none;
+}
+
+.SCREENING:hover {
+	text-decoration: none;
+}
+
+.MAP {
+	text-decoration: none;
+}
+
+.MAP:hover {
+	text-decoration: none;
+}
+body {
+    color: rgb(209, 205, 199);
+    background-color: rgb(24, 26, 27);
+}
+
+@media screen and (max-width: 500px) {
+	.header a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	.header-right {
+	  float: none;
+	}
+  }

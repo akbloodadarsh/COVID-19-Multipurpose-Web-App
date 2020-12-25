@@ -1,0 +1,36 @@
+{
+  "name": "COVID-19-Multipurpose-Web-App",
+  "version": "1.0.0",
+  "description": "Web App for Covid-19",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "ejs": "3.1.5",
+    "encoding": "0.1.13",
+    "engine.io": "4.0.5",
+    "express": "4.17.1",
+    "http-server": "0.12.3",
+    "install": "0.13.0",
+    "moment": "2.29.1",
+    "nodemon": "2.0.6",
+    "novelcovid": "3.0.0",
+    "npm": "6.14.10",
+    "request": "2.88.2",
+    "socket.io": "3.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akbloodadarsh/COVID-19-Multipurpose-Web-App.git"
+  },
+  "keywords": [],
+  "author": "Adarsh Kunwar <adarsh.infinite@.com> (https://github.com/akbloodadarsh)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akbloodadarsh/COVID-19-Multipurpose-Web-App/issues"
+  },
+  "homepage": "https://github.com/akbloodadarsh/COVID-19-Multipurpose-Web-App#readme"
+}
